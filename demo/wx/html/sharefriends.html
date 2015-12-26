@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<style>
+#shareit {
+  -webkit-user-select: none;
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  text-align: center;
+  top: 0;
+  left: 0;
+  z-index: 105;
+}
+#shareit img {
+  max-width: 100%;
+}
+.arrow {
+  position: absolute;
+  right: 10%;
+  top: 5%;
+}
+#share-text {
+  margin-top: 400px;
+}
+</style>
+</head>
+<body>
+<a id="share_btn" href="####">分享到朋友圈</a>
+<div id="shareit">
+  <img class="arrow" src="../img/share-it.png">
+  <a href="#" id="follow">
+    <img id="share-text" src="../img/share-text.png">
+  </a>
+</div>
+
+</body>
+</html>
+<script src="../../plug-in/jquery/jquery-1.11.0.js"></script>
+<script>
+  //立即分享到微信朋友圈点击事件
+  $("#share_btn").on("click", function() {
+      $("#shareit").show();
+  });
+   
+   
+  $("#shareit").on("click", function(){
+    $("#shareit").hide(); 
+  })
+</script>
