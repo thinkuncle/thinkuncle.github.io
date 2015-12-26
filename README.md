@@ -21,5 +21,6 @@
 #### word相关
 
 ## 其他
-#### [github初入门](https://github.com/thinkuncle/thinkuncle.github.io/issues/2)
+####github
+* [github初入门](https://github.com/thinkuncle/thinkuncle.github.io/issues/2)
 
