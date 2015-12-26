@@ -5,27 +5,18 @@
 
 # 目录
 
-## JS系列
-#### jquery
+## 我的IT
+* [计算机相关](https://github.com/thinkuncle/thinkuncle.github.io/tree/master/classify/base.md)
+* [javascript相关](https://github.com/thinkuncle/thinkuncle.github.io/tree/master/classify/javascript.md)
+* [java相关](https://github.com/thinkuncle/thinkuncle.github.io/tree/master/classify/java.md)
+* [数据库相关](https://github.com/thinkuncle/thinkuncle.github.io/tree/master/classify/database.md)
+* [服务器相关](https://github.com/thinkuncle/thinkuncle.github.io/tree/master/classify/server.md)
+* [其他](https://github.com/thinkuncle/thinkuncle.github.io/tree/master/classify/other.md)
+* [案例](https://github.com/thinkuncle/thinkuncle.github.io/tree/master/classify/example.md)
 
-## Java系列
-#### String
-* [String基本操作](https://github.com/thinkuncle/thinkuncle.github.io/issues)
 
-#### Java应用
-* [Excel文档操作](https://github.com/thinkuncle/thinkuncle.github.io/issues)
-* [Word文档操作](https://github.com/thinkuncle/thinkuncle.github.io/issues)
+## 收藏
 
-## 数据库系列
-####  mysql相关
 
-## 服务器系列
-#### linux相关
-
-## 计算机基础
-#### word相关
-
-## 其他
-#### github相关
-* [github初入门](https://github.com/thinkuncle/thinkuncle.github.io/issues/2)
+## 杂谈
 
