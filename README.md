@@ -1,2 +1,1 @@
-# thinkuncle.github.io
-thinkuncle
+# thinkuncle.github.io Blog
