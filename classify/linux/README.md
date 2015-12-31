@@ -1,6 +1,8 @@
 README
 ======
-Weapon
+
+一直想整理linux命令以后用来自己查阅，最近在收集资料的时候非常惊喜的发现github上有人整理了一份，可读性也相当不错，为了便于翻阅,我便无耻的把它拉进了我的工程，在此特别感谢[LinuxTools](https://github.com/guodongxiaren/LinuxTool)。
+
 本目录中介绍Linux常用的工具，还有常用操作及其命令
 ------
 ##综合文件
