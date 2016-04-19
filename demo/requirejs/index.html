@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>测试</title>
+		
+		<!-- 方案1 -->
+		<!--<script src="../../plug-in/requirejs/require.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+          	require(["js/a"]);
+        </script>-->
+		
+		<!-- 方案2 -->
+		<!--<script src="../../plug-in/requirejs/require.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			require(["js/a"], function(){alert("callback形式");});
+        </script>-->
+		
+        <!-- 方案3 -->
+       	<script data-type="js/main" src="../../plug-in/requirejs/require.js" ></script>
+       	<script type="text/javascript">
+			require(["js/a"], function(){alert("callback形式");});
+        </script>
+       	
+	</head>
+	<body>
+		测试
+	</body>
+</html>
