@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>请求客户端信息</title>
+		<script src="../../plug-in/jquery/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../../common/css/table-1.css"/>
+		<script language="javascript" type="text/javascript" src="http://fw.qq.com/ipaddress"> 
+		</script>  
+		<style type="text/css">
+			body {
+			    width: 600px;
+			    margin: 40px auto;
+			    font-family: 'trebuchet MS', 'Lucida sans', Arial;
+			    font-size: 14px;
+			    color: #444;
+			}
+			
+			table {
+			    *border-collapse: collapse; /* IE7 and lower */
+			    border-spacing: 0;
+			    width: 100%;    
+			}
+		</style>
+		
+		<script type="text/javascript">
+			function getOS() {
+				var os = "未知";
+				var userAgentInfo = navigator.userAgent.toLowerCase();
+				// 按数组优先匹配顺序
+				var agents = ["android", "iphone", "symbianos", "windows phone",
+					"ipad", "ipod", "windows", "linux"
+				];
+				for (var v = 0; v < agents.length; v++) {
+					if (userAgentInfo.indexOf(agents[v]) > 0) {
+						os = agents[v];
+						// 避免重复匹配 跳出循环
+						break;
+					}
+				}
+				return os;
+			}
+
+			// 获取用户代理
+			function getUserAgent() {
+				return navigator.userAgent;
+			}
+			
+			/**
+			 * 获取区域
+			 * 根据第三方接口获取
+			 */
+			function getArea(ip){
+				// IP 暂时客户端暂时取不到
+				var area = "未知";
+				//var openIpAreaAddr = "http://www.13896.com/apiAc!q?t=ip&k=" + ip;
+				var openIpAreaAddr = "http://ip.taobao.com/service/getIpInfo.php?ip=" + ip;
+				$.ajax({
+				    url: openIpAreaAddr,
+				    type: 'POST',
+				    headers: {
+			            'Content-Type': 'multipart/form-data'
+			        },
+				    success:function(data){
+						console.log(data);				            
+				    },
+				    error:function(a,b,c){
+				    }
+				});
+				return area;
+			}
+			
+			$(function (){
+				$("#useragent").html(getUserAgent());
+				$("#os").html(getOS());
+				var ip =  "210.79.81.122";
+				$("#ip").html(ip + "(客户端无法获取，暂设临时IP)");
+				$("#area").html(getArea(ip) + "(暂时未找到支持跨域查询的第三方接口)");
+			});
+		</script>
+		
+		
+	</head>
+
+	<body>
+		<h2>请求客户端信息</h2>
+		<table class="bordered">
+			<thead>
+			<tr>
+				<th>属性</th>
+				<th>值</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>用户代理头</td>
+				<td id="useragent"></td>
+			</tr>
+				<td>操作系统</td>
+				<td id="os"></td>
+			</tr>
+				<td>IP地址</td>
+				<td id="ip"></td>
+			</tr>
+				<td>IP地域</td>
+				<td id="area"></td>
+			</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

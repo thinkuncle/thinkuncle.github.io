@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>URI编码</title>
+		<script src="../../plug-in/jquery/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../../common/css/table-1.css"/>
+		<script language="javascript" type="text/javascript" src="http://fw.qq.com/ipaddress"> 
+		</script>  
+		<style type="text/css">
+			body {
+			    width: 600px;
+			    margin: 40px auto;
+			    font-family: 'trebuchet MS', 'Lucida sans', Arial;
+			    font-size: 14px;
+			    color: #444;
+			}
+			
+			table {
+			    *border-collapse: collapse; /* IE7 and lower */
+			    border-spacing: 0;
+			    width: 100%;    
+			}
+		</style>
+		
+		<script type="text/javascript">
+			$(function (){
+				var url = window.location.href + "?name=中文";
+				$("#url").html(url);
+				$("#encodeURI").html(encodeURI(url));
+				$("#escape").html(escape(url));
+				$("#encodeURIComponent").html(encodeURIComponent(url));
+			});
+		</script>
+		
+		
+	</head>
+
+	<body>
+		<h2>url编码</h2>
+		<table class="bordered">
+			<thead>
+			<tr>
+				<th>属性</th>
+				<th>值</th>
+				<th>备注</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td>原生路径</td>
+				<td id="url"></td>
+				<td>原生路径</td>
+			</tr>
+			<tr>
+				<td>encodeURI</td>
+				<td id="encodeURI"></td>
+				<td>。该方法的目的是对 URI 进行完整的编码，因此对以下在 URI 中具有特殊含义的 ASCII 标点符号，encodeURI() 函数是不会进行转义的：;/?:@&=+$,#</td>
+			</tr>
+				<td>escape</td>
+				<td id="escape"></td>
+				<td>其他所有的字符都会被转义序列替换。</td>
+			</tr>
+			<tr>
+				<td>encodeURIComponent</td>
+				<td id="encodeURIComponent"></td>
+				<td>
+其他字符（比如 ：;/?:@&=+$,# 这些用于分隔 URI 组件的标点符号），都是由一个或多个十六进制的转义序列替换的</td>
+			</tr>
+			<tr>
+				<td colspan="3"> 以上方法不会对 ASCII 字母和数字进行编码，也不会对这些 ASCII 标点符号进行编码： - _ . ! ~ * ' ( ) 。<br/>
+				提示：请注意 encodeURIComponent() 函数 与 encodeURI() 函数的区别之处，前者假定它的参数是 URI 的一部分（比如协议、主机名、路径或查询字符串）。因此 encodeURIComponent() 函数将转义用于分隔 URI 各个部分的标点符号。
+此方法解码方式decodeURIComponent
+				</td>
+				
+				
+			</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
