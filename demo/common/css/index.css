@@ -2,6 +2,16 @@ body {
 	background-color: #CCCCCC;
 }
 
+h2{
+    width: 140px;
+    padding: 11px 15px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    background-color: #61B3E6;
+    margin: 0;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
