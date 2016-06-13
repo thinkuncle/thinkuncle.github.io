@@ -21,7 +21,9 @@
   * [方法论](https://github.com/thinkuncle/thinkuncle.github.io/labels/%E6%96%B9%E6%B3%95%E8%AE%BA)
 * 其他
   * [其他](https://github.com/thinkuncle/thinkuncle.github.io/labels/%E6%9D%82%E8%B0%88)
-  
+  * [周边](https://github.com/thinkuncle/thinkuncle.github.io/labels/%E5%91%A8%E8%BE%B9)
+  * [架构与运维](https://github.com/thinkuncle/thinkuncle.github.io/labels/%E6%9E%B6%E6%9E%84%E4%B8%8E%E8%BF%90%E7%BB%B4)
+  * [算法](https://github.com/thinkuncle/thinkuncle.github.io/labels/%E7%AE%97%E6%B3%95)
 
 ## 我的案例
 * [案例](https://github.com/thinkuncle/thinkuncle.github.io/tree/master/demo)
