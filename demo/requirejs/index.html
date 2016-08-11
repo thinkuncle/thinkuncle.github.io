@@ -20,6 +20,7 @@
        	<script data-type="js/main" src="../plug-in/requirejs/require.js"></script>
        	<script type="text/javascript">
        		// 先引用
+       		require(["js/a"], function(){alert("callback形式");});
 			require(["js/a"], function(){alert("callback形式");});
         </script>
        	
